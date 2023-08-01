@@ -3,26 +3,23 @@ const Footer = () => {
     <footer id="footer">
       <div class="container">
         <div class="social-links">
-          <a href="https://twitter.com/bhushanborole26" class="twitter">
-            <i class="bx bxl-twitter"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/bhushan_borole_/"
-            class="instagram"
-          >
-            <i class="bx bxl-instagram"></i>
-          </a>
-          <a href="https://github.com/bhushan-borole" class="google-plus">
+          <a href="https://github.com/Santiago-Fae">
             <i class="bx bxl-github"></i>
           </a>
-          <a
-            href="https://www.linkedin.com/in/bhushan-borole/"
-            class="linkedin"
-          >
+          <a href="https://www.linkedin.com/in/santiago-fa%C3%A9-92322020a/">
             <i class="bx bxl-linkedin"></i>
           </a>
-          <a href="mailto:borolebhushan8@gmail.com">
+          <a href="mailto:santiagopoffo@hotmail.com">
             <i class="bx bx-envelope"></i>
+          </a>
+          <a href="https://www.beecrowd.com.br/judge/pt/profile/573539">
+            <i class="bx bx-code-alt"></i>
+          </a>
+          <a href="https://www.instagram.com/santi_fae/">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="https://www.chess.com/member/santi_fae">
+            <i class="bx bxs-chess"></i>
           </a>
         </div>
         <div class="credits" style={{ color: "#74808a" }}>

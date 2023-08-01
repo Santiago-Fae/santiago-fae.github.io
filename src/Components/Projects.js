@@ -15,55 +15,50 @@ import RemoveIcon from "@material-ui/icons/Remove";
 const Projects = () => {
   const items = [
     {
-      cardTitle: "Nuharc - Smart City Disaster Report App",
+      cardTitle: "CheckouTT - API Twitter",
+      cardSubtitle: "Personal Project",
       cardDetailedText: [
-        "App to simulate disasters in Dublin.",
-        "Realtime traffic reporting upto 300ms latency.",
-        "Combines different velocity data streams to give a 99.9% accurate data.",
-        "Real time changes of disasters and re-routing of current users using sockets implementation.",
-        "All Emergency services directed towards the disaster as soon as someone reports.",
-        "Entire application is running in a dockerized container and hosted in Azure VM.",
-        "From scratch implementation of Load Balancing Algorithm (Weighted Round Robin) with Healthchecks.",
-        "All data is stored in NoSQL MongoDB.",
+        "A Twitter API that manipulates the data of the given user, returning the other users who most interacted with him.",
+        "Ranked in order of likes, retweets and replies on Twitter.",
+        "It was not developed through courses, it is a totally authentic project.",
       ].map(function (text) {
         return <li>{text}</li>;
       }),
-      technologies: ["MongoDB", "Express JS", "React JS", "Node JS"],
-      links: [
-        {
-          url: "https://github.com/TCD-ASE-6/Nuharc",
-          text: "View Source Code",
-        },
-      ],
-    },
-    {
-      cardTitle: "Woyse - A Multilingual Entity Recognition System",
-      cardDetailedText: [
-        "Build an end-to-end intent and entity recognition microservice in Django.",
-        "Built using Python as a main stack, and used Tornado for socket connection.",
-      ].map(function (text) {
-        return <li>{text}</li>;
-      }),
-      technologies: ["Python", "Django", "Rasa"],
+      technologies: ["PHP", "API", "JavaScript"],
       links: [],
     },
     {
-      cardTitle: "Limitless File Sharing App",
+      cardTitle: "DWG - Parts quality control system",
       cardDetailedText: [
-        "App that allows you to share ANY amount of data from one system to another.",
-        "The file is encoded using base64, then it is split into chunks and uploaded to Google Sheets. While downloading the serial order is maintained and it is decoded at client’s end.",
+        "System developed together with the website and integrated into the CMS.",
+        "Multiple languages (Integrated with ChatGPT to assist with automatic translation)",
+        "Several steps and flows (Inspection Requests, Updates on inspections of a part, Contracts)",
+        "Modeled and developed the entire database and back-end of the application",
       ].map(function (text) {
         return <li>{text}</li>;
       }),
-      technologies: ["Python", "Flask", "API"],
+      technologies: ["PHP", "MySQL", "JavaScript", "API", "Git"],
+      links: [],  
+    },
+    {
+      cardTitle: "Lauri Romario Silva - Website",
+      cardSubtitle: "Freelancer",
+      cardDetailedText: [
+        "Developed the front and back (I didn't do the layout)",
+        "Developed the management of all content in a proprietary and personalized CMS platform",
+        "Accept cookies is a module developed from scratch by me, implemented in all the company's websites.",
+      ].map(function (text) {
+        return <li>{text}</li>;
+      }),
+      technologies: ["PHP", "MySQL", "JavaScript", "Tailwind"],
       links: [
         {
-          url: "https://github.com/vinay-deshmukh/Limitless-Client",
-          text: "View Source Code",
+          url: "https://www.lauriromariosilva.com.br/",
+          text: "Website",
         },
       ],
     },
-    {
+/*     {
       cardTitle: "Finance Assistant Chatbot",
       cardDetailedText: [
         "Created a chatbot for Fin-tech companies for helping students regarding finances.",
@@ -78,50 +73,7 @@ const Projects = () => {
           text: "View Source Code",
         },
       ],
-    },
-    {
-      cardTitle: "Text Summarization",
-      cardDetailedText: [
-        "It summarizes the given text into number of sentences or words in English and Punjabi.",
-        "Created in Flask and deployed on Google App Engine.",
-      ].map(function (text) {
-        return <li>{text}</li>;
-      }),
-      technologies: ["Python", "GCP"],
-      links: [
-        {
-          url: "https://github.com/bhushan-borole/text-summarization",
-          text: "View Source Code",
-        },
-      ],
-    },
-    {
-      cardTitle: "Meeting App",
-      cardDetailedText:
-        "This project was created while I was working as a Full Stack Developer Intern. Created API's using Spring Boot and used the MVC architecture, and consumed these API's in the frontend.",
-      technologies: ["HTML", "CSS", "JS", "PHP"],
-      links: [
-        {
-          url: "https://github.com/bhushan-borole/meeting-app",
-          text: "View Source Code",
-        },
-      ],
-    },
-    {
-      cardTitle: "Justalk",
-      cardDetailedText: "A chat application made using React and Firebase Auth",
-      technologies: ["React JS", "Firebase"],
-      links: [
-        {
-          url: "https://github.com/bhushan-borole/justalk",
-          text: "View Source Code",
-        },
-        {
-          url: "https://bhushan-borole.github.io/justalk/",
-          text: "View Demo",
-        },
-      ],
-    },
+    } */
   ];
 
   const [limit, setLimit] = useState(3);
@@ -184,6 +136,17 @@ const Projects = () => {
                   >
                     {data.cardTitle}
                   </h3>
+                  <h4
+                    className="vertical-timeline-element-subtitle"
+                    style={{
+                      fontSize: "1.2em",
+                      fontWeight: "350",
+                      color: "#7e8890",
+                      marginTop: "5px",
+                    }}
+                  >
+                    {data.cardSubtitle}
+                  </h4>
                   <p
                     style={{
                       fontSize: "1em",

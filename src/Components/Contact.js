@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SnackBar from "my-react-snackbar";
 
-const FORMSPARK_URL = "https://submit-form.com/CARCkqSD";
+const FORMSPARK_URL = "https://submit-form.com/rmMM6zSL";
 
 function Contact() {
   const [message, setMessage] = useState("");

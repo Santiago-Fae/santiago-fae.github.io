@@ -12,7 +12,7 @@ export default function Hero() {
       <Container data-aos="zoom-in" data-aos-delay="500">
         <Row>
           <Col lg={6} className="item-center">
-            <h1>Bhushan Borole</h1>
+            <h1>Santiago Faé</h1>
             <br />
             <p>
               I'm a&nbsp;
@@ -21,7 +21,7 @@ export default function Hero() {
                 data-typed-items="Developer, Tabla Player, Gamer"
               >
                 <Typed
-                  strings={["Developer", "Tabla Player", "Gamer"]}
+                  strings={["Developer", "Soccer Lover", "Chess Player"]}
                   loop
                   typeSpeed={90}
                   backSpeed={60}
@@ -37,27 +37,30 @@ export default function Hero() {
               </span>
             </p>
             <div class="social-links">
-              <a href="https://www.youtube.com/channel/UC8TXgNmZW2hMis074yGOTUQ">
-                <i class="bx bxl-youtube"></i>
-              </a>
-              <a href="https://www.instagram.com/bhushan_borole_/">
-                <i class="bx bxl-instagram"></i>
-              </a>
-              <a href="https://github.com/bhushan-borole">
+              <a href="https://github.com/Santiago-Fae">
                 <i class="bx bxl-github"></i>
               </a>
-              <a href="https://www.linkedin.com/in/bhushan-borole/">
+              <a href="https://www.linkedin.com/in/santiago-fa%C3%A9-92322020a/">
                 <i class="bx bxl-linkedin"></i>
               </a>
-              <a href="mailto:borolebhushan8@gmail.com">
+              <a href="mailto:santiagopoffo@hotmail.com">
                 <i class="bx bx-envelope"></i>
+              </a>
+              <a href="https://www.beecrowd.com.br/judge/pt/profile/573539">
+                <i class="bx bx-code-alt"></i>
+              </a>
+              <a href="https://www.instagram.com/santi_fae/">
+                <i class="bx bxl-instagram"></i>
+              </a>
+              <a href="https://www.chess.com/member/santi_fae">
+                <i class="bx bxs-chess"></i>
               </a>
             </div>
             <br />
             <Button
               variant="outlined"
               target="_blank"
-              href="https://drive.google.com/file/d/1XVfSZNcC6P9QlmEgA3s1Ebi23kydQGYj/view?usp=sharing"
+              href="https://drive.google.com/file/d/1nSncgHt9bUaDb9OrrT-tTamthhDvNhXA/view?usp=sharing"
               startIcon={<CloudDownloadIcon />}
               style={{
                 color: "rgb(116, 128, 138)",

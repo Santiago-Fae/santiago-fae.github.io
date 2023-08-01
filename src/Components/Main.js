@@ -13,7 +13,7 @@ const Main = () => (
     <Experience />
     <Projects />
     <Skills />
-    <Achievements />
+ {/*    <Achievements /> */}
     <Education />
     <Contact />
     <hr />

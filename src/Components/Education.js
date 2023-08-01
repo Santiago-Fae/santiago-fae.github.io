@@ -9,27 +9,23 @@ import StarIcon from "@material-ui/icons/Star";
 const Education = () => {
   const items = [
     {
-      cardTitle: "Trinity College Dublin",
-      cardSubtitle: "MSc - Intelligent Systems",
-      coursesHead: "Courses: ",
+      cardTitle: "Universidade de Caxias do Sul",
+      cardSubtitle: "Bachelor of Software Engineering",
       cardDetailedText: [
-        "Machine Learning",
-        "Information Retrieval and Web Search",
-        "Data Analytics",
-        "Knowledge and Data Engineering",
-        "Advanced Software Engineering",
-        "Artificial Intelligence",
-        "Text Analytics",
+        "During college I got my first contact with the programming language C and Java.",
+        "I was also introduced to the programming site 'https://www.beecrowd.com.br', which is made to train exercises and programming logic. I am in the top positions in my college, with more than 500 registered students and more than 200 solved exercises.",
+        "And I had subjects like: Algorithms and data structure, database, software architecture...",
       ].map(function (course) {
         return <li>{course}</li>;
       }),
-      date: "2021 - 2022",
+      date: "2020 - present",
     },
     {
-      cardTitle: "St. Francis Institute Of Technology",
-      cardSubtitle: "BE in Computer Engineering",
-      cardDetailedText: "CGPA: 8.72 (First class with Distinction)",
-      date: "2016 - 2020",
+      cardTitle: "FreeCodeCamp",
+      cardSubtitle: "JavaScript Algorithms and Data Structures Certification",
+      cardDetailedText: "Course with more than 300 hours duration.",
+      cardDetailedText: "I learned and put into practice all the basics of JavaScript",
+      date: "2022 - 2022",
     },
   ];
 

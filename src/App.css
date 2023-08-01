@@ -409,7 +409,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #728394;
+  color: #d5d5d5;
 }
 
 .about .content ul {
@@ -421,7 +421,7 @@ section {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-  color: #728394;
+  color: #d5d5d5;
 }
 
 .about .content ul strong {
@@ -437,7 +437,7 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
-  color: #728394;
+  color: #d5d5d5;
 }
 
 .about a:link {

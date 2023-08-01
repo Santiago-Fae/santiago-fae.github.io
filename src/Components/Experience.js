@@ -8,28 +8,29 @@ import WorkIcon from "@material-ui/icons/Work";
 export default function Experience() {
   const items = [
     {
-      date: "September 2022 - Present",
-      cardTitle: "Microsoft",
-      cardSubtitle: "Software Engineer",
+      date: "June 2021 - Present",
+      cardTitle: "Ilex",
+      cardSubtitle: "Full Stack Developer",
       cardDetailedText: [
-        "Developing automated systems that detect security issues and manage workflows across Azure Identity services on a global scale.",
-        "Implement privacy-enhancing technologies to ensure compliance with applicable privacy laws and regulations.",
+        "I developed, refactored and improved the company's own CMS and applied it to more than 50 websites and ecommerces.",
+        "Modeled software from scratch with APIs for external systems like ChatGPT.",
       ].map(function (text) {
         return <li>{text}</li>;
       }),
     },
     {
-      date: "November 2020 – February 2021",
-      cardTitle: "Mobisy Technologies",
-      cardSubtitle: "Research & Development Intern",
+      date: "June 2022 – Present",
+      cardTitle: "Freelancer",
+      cardSubtitle: "Full Stack Developer",
       cardDetailedText: [
-        "Collected JSON data by web-scraping, using open API end points and storing it in a RDBMS.",
-        "Responsible for building SKU Classification system using the collected data.",
+        "After a year of experience I started working independently on several projects.",
+        "From creating small applications to entire websites.",
+        "I took the opportunity to leave my comfort zone and develop projects in other languages ​​such as Java.",
       ].map(function (text) {
         return <li>{text}</li>;
       }),
     },
-    {
+/*     {
       date: "September 2019 – October 2019",
       cardTitle: "Techskills IT Consultants",
       cardSubtitle: "Backend Developer",
@@ -46,7 +47,7 @@ export default function Experience() {
       cardSubtitle: "Fullstack Developer Intern",
       cardDetailedText:
         "Developed a Meeting App website which handles all the data that happens in a meeting. In this project I developed several REST API's using Spring Boot and used the MVC architecture. These API's are being consumed in the frontend.",
-    },
+    }, */
   ];
 
   return (
