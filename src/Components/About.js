@@ -38,7 +38,7 @@ export default function About() {
               src={img}
               height="100%"
               width="50%"
-              style={{ borderRadius: "50%" }}
+              style={{ borderRadius: "50%", maxWidth: "300px",  width: "100%" }}
             />
           </Col>
           <Col lg={8} pt={4} className="content">
