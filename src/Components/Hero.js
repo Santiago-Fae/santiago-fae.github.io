@@ -1,4 +1,4 @@
-import img from "./images/me-1.jpg";
+import img from "./images/main-me.jpeg";
 import Typed from "react-typed";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
