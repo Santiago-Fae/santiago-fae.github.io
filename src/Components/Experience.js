@@ -13,7 +13,8 @@ export default function Experience() {
       cardSubtitle: "Full Stack Developer",
       cardDetailedText: [
         "I developed, refactored and improved the company's own CMS and applied it to more than 50 websites and ecommerces.",
-        "Modeled software from scratch with APIs for external systems like ChatGPT.",
+        "With the architectural standards adopted by the company of MVC, ORM (Active Record) and CRUD, I developed the back-end of websites, on the company's own CMS platform, adapting it to specifications and variations from client to client.",
+        "Integrated APIs from major tech giants like ChatGPT, Instagram and Twitter",
       ].map(function (text) {
         return <li>{text}</li>;
       }),

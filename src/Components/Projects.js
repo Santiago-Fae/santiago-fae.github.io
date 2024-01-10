@@ -38,8 +38,12 @@ const Projects = () => {
         return <li>{text}</li>;
       }),
       technologies: ["PHP", "MySQL", "JavaScript", "API", "Git"],
-      links: [],  
-    },
+      links: [
+        {
+          url: "https://www.dwgquality.com/en",
+          text: "Website",
+        },
+      ],    },
     {
       cardTitle: "Lauri Romario Silva - Website",
       cardSubtitle: "Freelancer",

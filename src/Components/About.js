@@ -1,4 +1,4 @@
-import img from "./images/me-2.jpg";
+import img from "./images/me-5.jpeg";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -36,9 +36,9 @@ export default function About() {
           <Col lg={4} className="d-flex justify-content-center">
             <img
               src={img}
-              height="100%"
+              height="90%"
               width="50%"
-              style={{ borderRadius: "50%", maxWidth: "300px",  width: "100%" }}
+              style={{ borderRadius: "50%", maxWidth: "300px",  width: "88%" }}
             />
           </Col>
           <Col lg={8} pt={4} className="content">
