@@ -40,7 +40,7 @@ export default function Hero() {
               <a href="https://github.com/Santiago-Fae">
                 <i class="bx bxl-github"></i>
               </a>
-              <a href="https://www.linkedin.com/in/santiago-fa%C3%A9-92322020a/">
+              <a href="https://www.linkedin.com/in/santiago-fae-92322020a/">
                 <i class="bx bxl-linkedin"></i>
               </a>
               <a href="mailto:santiagopoffo@hotmail.com">
@@ -60,7 +60,7 @@ export default function Hero() {
             <Button
               variant="outlined"
               target="_blank"
-              href="https://drive.google.com/file/d/1nSncgHt9bUaDb9OrrT-tTamthhDvNhXA/view?usp=sharing"
+              href="https://drive.google.com/file/d/10WmhuvEZbLGuSS4DnAzPmvNecTWxjLcv/view?usp=sharing"
               startIcon={<CloudDownloadIcon />}
               style={{
                 color: "rgb(116, 128, 138)",

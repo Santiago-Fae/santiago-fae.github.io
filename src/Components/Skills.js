@@ -1,7 +1,7 @@
 const Skills = () => {
 
   const skills = [
-    "PHP", "MySQL", "JavaScript", "API", "Tailwind", "Laravel",
+    "NodeJs", "PHP", "NestJs", "Angular", "RabbitMQ", "MySQL", "MongoDB", "API", "Microservices", "Tailwind", "Laravel",
     "Java", "C", "Git", "Github"
   ]
   return (

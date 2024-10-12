@@ -6,7 +6,7 @@ const Footer = () => {
           <a href="https://github.com/Santiago-Fae">
             <i class="bx bxl-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/santiago-fa%C3%A9-92322020a/">
+          <a href="https://www.linkedin.com/in/santiago-fae-92322020a/">
             <i class="bx bxl-linkedin"></i>
           </a>
           <a href="mailto:santiagopoffo@hotmail.com">

@@ -8,7 +8,19 @@ import WorkIcon from "@material-ui/icons/Work";
 export default function Experience() {
   const items = [
     {
-      date: "June 2021 - Present",
+      date: "April 2024 - Present",
+      cardTitle: "PlanMob",
+      cardSubtitle: "Full Stack Developer",
+      cardDetailedText: [
+        "I started at the company with the clock project. I was in charge of building the entire backend, using NestJs, a Node Js framework.",
+        "During development I applied JWT concepts for authentication, DTOs, microservices for scalability, queues using RabbitMQ, clean architecture and other standards for quality and easy code maintenance in the future. In addition, I applied unit tests and integration tests to guarantee functionality and prevent errors.",
+        "When necessary, I also worked on the front-end with Angular to build forms and dynamic screens.",
+      ].map(function (text) {
+        return <li>{text}</li>;
+      }),
+    },
+    {
+      date: "June 2021 - April 2024",
       cardTitle: "Ilex",
       cardSubtitle: "Full Stack Developer",
       cardDetailedText: [

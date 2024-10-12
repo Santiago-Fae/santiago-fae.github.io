@@ -1,11 +1,11 @@
-import img from "./images/me-5.jpeg";
+import img from "./images/me-space-apps.jpg";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 export default function About() {
   window.addEventListener('load', () => {
-    const apiUrl = 'https://api.chess.com/pub/player/santi_fae/stats'; // Substitua pelo URL da sua API
+    const apiUrl = 'https://api.chess.com/pub/player/santi_fae/stats';
     fetch(apiUrl)
         .then(response => {
             if (!response.ok) {
@@ -36,9 +36,9 @@ export default function About() {
           <Col lg={4} className="d-flex justify-content-center">
             <img
               src={img}
-              height="90%"
-              width="50%"
-              style={{ borderRadius: "50%", maxWidth: "300px",  width: "88%" }}
+              height="100%"
+              width="100%"
+              style={{ borderRadius: "30px", maxWidth: "300px",  width: "100%" }}
             />
           </Col>
           <Col lg={8} pt={4} className="content">
@@ -46,13 +46,19 @@ export default function About() {
             <h3>Software Developer.</h3>
             <br></br>
             <p style={{ color: "#d8d8d8" }}>
-              A Full Stack developer, passionate about technology, always looking to be better. <br></br>
-              Because I was very curious, I started to study programming by myself and today I already have 2+ years of experience.
+              A Full Stack programmer, passionate about technology, with a stack of NodeJs, PHP, MongoDB, MySQL, Angular, Git and other small experiences, but always open to new ones. <br></br>
             </p>
-            <br></br>
             <p style={{ color: "#d8d8d8" }}>
-            Besides programming, I have other hobbies like Chess, it has an Elo of <span id="DataChess">1500+</span>, add me to play one day :) <br></br>
-            I also practice Krav Maga, an Israeli defense technique, I am currently a yellow belt
+              I've worked on complete projects on my own, I can be versatile in many areas and when necessary I work very well in a group, often taking responsibility for initiatives and acting as a leader.
+            </p>
+            <p style={{ color: "#d8d8d8" }}>
+              Because I was very curious, I started to study programming by myself and today I already have 3+ years of experience.<br></br>
+              I took part in some Hackathons, such as NASA Space Apps, where we developed an application in just two days.
+              I'm passionate about challenges and situations that take me out of my comfort zone, because they force me to improve.
+            </p>
+            <p style={{ color: "#d8d8d8" }}>
+            Besides programming, I have other hobbies, like chess, it has an elo of <span id="DataChess">1500+</span>, add me to play one day :) and I love soccer, I support Internacional (Porto Alegre's soccer team) <br></br>
+            I also practice Krav Maga, an Israeli defense technique, I am currently a yellow belt.
             </p>
           </Col>
         </Row>

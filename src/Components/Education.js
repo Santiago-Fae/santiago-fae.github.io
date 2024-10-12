@@ -12,13 +12,14 @@ const Education = () => {
       cardTitle: "Universidade de Caxias do Sul",
       cardSubtitle: "Bachelor of Software Engineering",
       cardDetailedText: [
+        "I've completed half of my degree, but I've stopped at the moment because of my exchange program. I intend to finish one day.",
         "During college I got my first contact with the programming language C and Java.",
         "I was also introduced to the programming site 'https://www.beecrowd.com.br', which is made to train exercises and programming logic. I am in the top positions in my college, with more than 500 registered students and more than 200 solved exercises.",
         "And I had subjects like: Algorithms and data structure, database, software architecture...",
       ].map(function (course) {
         return <li>{course}</li>;
       }),
-      date: "2020 - present",
+      date: "2020 - 2024",
     },
     {
       cardTitle: "FreeCodeCamp",
