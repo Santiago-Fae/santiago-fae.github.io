@@ -39,6 +39,7 @@ export default function About() {
               height="100%"
               width="100%"
               style={{ borderRadius: "30px", maxWidth: "300px",  width: "100%" }}
+              alt="Me image"
             />
           </Col>
           <Col lg={8} pt={4} className="content">

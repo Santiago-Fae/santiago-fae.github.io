@@ -96,25 +96,25 @@ class Header extends React.Component {
           <nav id="navbar" className="navbar nav-menu navbar-expand-sm">
             <ul>
               <li>
-                <a href="#hero" className="nav-link scrollto active d-flex justify-content-center">
+                <a href="#hero" aria-label='Me' className="nav-link scrollto active d-flex justify-content-center">
                   <i class="bx bx-home"></i> 
                   <span>Home</span>
                 </a>
               </li>
               <li>
-                <a href="#about"  className="nav-link scrollto d-flex justify-content-center">
+                <a href="#about" aria-label='About me' className="nav-link scrollto d-flex justify-content-center">
                   <i class="bx bx-user"></i> 
                   <span>About</span>
                 </a>
               </li>
               <li>
-                <a href="#experience" class="nav-link scrollto d-flex justify-content-center">
+                <a href="#experience" aria-label='My experience' class="nav-link scrollto d-flex justify-content-center">
                   <i class="bx bx-briefcase"></i>
                   <span>Experience</span>
                 </a>
               </li>
               <li>
-                <a href="#projects" class="nav-link scrollto d-flex justify-content-center">
+                <a href="#projects" aria-label='My projects' class="nav-link scrollto d-flex justify-content-center">
                   <i className="bx bx-code"></i>
                   <span>Projects</span>
                 </a>
@@ -126,7 +126,7 @@ class Header extends React.Component {
                 </a>
               </li> */}
               <li>
-                <a href="#education" class="nav-link scrollto d-flex justify-content-center">
+                <a href="#education" aria-label='My education' class="nav-link scrollto d-flex justify-content-center">
                   <SchoolIcon />
                   <span>Education</span>
                 </a>
