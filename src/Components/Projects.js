@@ -28,7 +28,28 @@ const Projects = () => {
       links: [],
     },
     {
-      cardTitle: "DWG - Parts quality control system",
+      cardTitle: "Majuseg",
+      cardSubtitle: "E-commerce",
+      cardDetailedText: [
+        "A great ecommerce, tailor-made for the customer.",
+        "Personalized filters within the website, different prices according to the customer, among other unique features.",
+        "It includes everything an ecomerce can have, coupons, shipping, shopping cart.",
+        "Modeled and developed the entire database and back-end of the application",
+        "Without any ready-made tools, such as wordpress.",
+      ].map(function (text) {
+        return <li>{text}</li>;
+      }),
+      technologies: ["PHP", "MySQL", "JavaScript", "API", "Git"],
+      links: [
+        {
+          url: "https://www.majuseg.com.br/produtos?order=novidade&",
+          text: "E-commerce",
+        },
+      ],    
+    },
+    {
+      cardTitle: "DWG",
+      cardSubtitle: "Parts quality control system",
       cardDetailedText: [
         "System developed together with the website and integrated into the CMS.",
         "Multiple languages (Integrated with ChatGPT to assist with automatic translation)",
@@ -43,9 +64,27 @@ const Projects = () => {
           url: "https://www.dwgquality.com/en",
           text: "Website",
         },
-      ],    },
+      ],    
+    },
     {
-      cardTitle: "Lauri Romario Silva - Website",
+      cardTitle: "Product System - API",
+      cardSubtitle: "Project",
+      cardDetailedText: [
+        "RESTful API developed using the NestJS framework. It follows the principles of Clean Architecture and the MVC pattern. The API uses DTOs for data transfer",
+        "Project Architecture: Services, Infrastructure and Entities",
+      ].map(function (text) {
+        return <li>{text}</li>;
+      }),
+      technologies: ["NestJS", "TypeScript", "MySQL"],
+      links: [
+        {
+          url: "https://github.com/Santiago-Fae/nestjs-products-system/",
+          text: "Repository",
+        },
+      ],
+    },
+    {
+      cardTitle: "Lauri Romario Silva",
       cardSubtitle: "Freelancer",
       cardDetailedText: [
         "Developed the front and back (I didn't do the layout)",
@@ -155,7 +194,7 @@ const Projects = () => {
                     style={{
                       fontSize: "1em",
                       fontWeight: "350",
-                      color: "#74808a",
+                      color: "rgba(255, 255, 255, 0.8)",
                     }}
                   >
                     {data.cardDetailedText}

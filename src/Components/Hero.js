@@ -1,4 +1,4 @@
-import img from "./images/main-me.jpeg";
+import img from "./images/me-space-apps.jpg";
 import Typed from "react-typed";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -21,7 +21,7 @@ export default function Hero() {
                 data-typed-items="Developer, Tabla Player, Gamer"
               >
                 <Typed
-                  strings={["Developer", "Soccer Lover", "Chess Player"]}
+                  strings={["Developer", "Soccer Lover", "Full-Stack", "Chess Player"]}
                   loop
                   typeSpeed={90}
                   backSpeed={60}

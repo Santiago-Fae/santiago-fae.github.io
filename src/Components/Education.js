@@ -91,7 +91,7 @@ const Education = () => {
                     style={{
                       fontSize: "1em",
                       fontWeight: "350",
-                      color: "#74808a",
+                      color: "rgba(255, 255, 255, 0.8)",
                     }}
                   >
                     {data.cardDetailedText}
