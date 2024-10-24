@@ -32,7 +32,7 @@ jobs:
           # will put all file under this path
           local_path: ./build/ # default is ./*
           # files will copy to under remote_path
-          remote_path: /public_html/teste
+          remote_path: /var/www/teste
           
           # sftp args
           args: '-o ConnectTimeout=5'
