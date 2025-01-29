@@ -7,22 +7,20 @@ export default function About() {
   window.addEventListener('load', () => {
     const apiUrl = 'https://api.chess.com/pub/player/santi_fae/stats';
     fetch(apiUrl)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Erro na requisição');
-            }
-            return response.json();
-        })
-        .then(data => {
-            // Manipule os dados da API aqui
-            displayData(data);
-        })
-        .catch(error => {
-            console.error('Ocorreu um erro:', error);
-        });
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Erro na requisição');
+        }
+        return response.json();
+      })
+      .then(data => {
+        displayData(data);
+      })
+      .catch(error => {
+        console.error('Ocorreu um erro:', error);
+      });
   });
   function displayData(data) {
-    // Exiba os dados da API aqui
     document.getElementById('DataChess').innerHTML = data.chess_rapid.last.rating;
   } 
   return (

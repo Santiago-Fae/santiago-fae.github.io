@@ -85,6 +85,7 @@ export default function Hero() {
               width="65%"
               style={{
                 borderRadius: "30px",
+                padding: "15px",
               }}
               alt="Me image in NASA Space Apps"
             />
