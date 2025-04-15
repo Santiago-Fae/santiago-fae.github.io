@@ -1,0 +1,74 @@
+/* Custom styling for react-image-gallery */
+.image-gallery-wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.image-gallery {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.image-gallery-slide img {
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.image-gallery-thumbnail {
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.image-gallery-thumbnail.active {
+  border-color: #3498db;
+}
+
+.image-gallery-thumbnail:hover {
+  border-color: #2980b9;
+}
+
+.image-gallery-fullscreen-button,
+.image-gallery-left-nav,
+.image-gallery-right-nav {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.image-gallery-fullscreen-button:hover,
+.image-gallery-left-nav:hover,
+.image-gallery-right-nav:hover {
+  opacity: 1;
+}
+
+.content ul {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  list-style-type: disc !important;
+}
+
+.content li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #dddddd;
+}
+
+.content li:before {
+  content: "•";
+  color: #3498db; /* Change the bullet color */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em; /* Adjust the width to create space */
+  margin-left: 0.8em; /* Adjust the margin to align with text */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .image-gallery-slide img {
+    max-height: 350px;
+  }
+}

@@ -8,18 +8,29 @@ import Hero from './Components/Hero';
 import Main from './Components/Main';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import useGoogleAnalytics from './Components/GoogleAnalytics'; // o caminho depende de onde você salvar o arquivo
+import useGoogleAnalytics from './Components/GoogleAnalytics';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import ProjectDetail from './Components/ProjectDetail';
 
 AOS.init();
 
 function App() {
-  useGoogleAnalytics(); // Ativando o Google Analytics
+  useGoogleAnalytics();
   return (
-    <div className="App" style={{background: "rgba(46, 45, 43, 1)"}}>
-      <Header />
-      <Hero />
-      <Main />
-    </div>
+    <Router>
+      <div className="App" style={{background: "rgba(46, 45, 43, 1)"}}>
+        <Header />
+        <Switch>
+          <Route exact path="/" render={() => (
+            <>
+              <Hero />
+              <Main />
+            </>
+          )} />
+          <Route path="/project/:projectId" component={ProjectDetail} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

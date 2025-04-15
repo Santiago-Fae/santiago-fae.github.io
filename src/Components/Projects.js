@@ -11,113 +11,11 @@ import { useState } from "react";
 import CodeIcon from "@material-ui/icons/Code";
 import IconButton from "@material-ui/core/IconButton";
 import RemoveIcon from "@material-ui/icons/Remove";
+import { getProjectsData } from "../data/projects";
 
 const Projects = () => {
-  const items = [
-    {
-      cardTitle: "CheckouTT - API Twitter",
-      cardSubtitle: "Personal Project",
-      cardDetailedText: [
-        "A Twitter API that manipulates the data of the given user, returning the other users who most interacted with him.",
-        "Ranked in order of likes, retweets and replies on Twitter.",
-        "It was not developed through courses, it is a totally authentic project.",
-      ].map(function (text) {
-        return <li>{text}</li>;
-      }),
-      technologies: ["PHP", "API", "JavaScript"],
-      links: [],
-    },
-    {
-      cardTitle: "Majuseg",
-      cardSubtitle: "E-commerce",
-      cardDetailedText: [
-        "A great ecommerce, tailor-made for the customer.",
-        "Personalized filters within the website, different prices according to the customer, among other unique features.",
-        "It includes everything an ecomerce can have, coupons, shipping, shopping cart.",
-        "Modeled and developed the entire database and back-end of the application",
-        "Without any ready-made tools, such as wordpress.",
-      ].map(function (text) {
-        return <li>{text}</li>;
-      }),
-      technologies: ["PHP", "MySQL", "JavaScript", "API", "Git"],
-      links: [
-        {
-          url: "https://www.majuseg.com.br/produtos?order=novidade&",
-          text: "E-commerce",
-        },
-      ],    
-    },
-    {
-      cardTitle: "DWG",
-      cardSubtitle: "Parts quality control system",
-      cardDetailedText: [
-        "System developed together with the website and integrated into the CMS.",
-        "Multiple languages (Integrated with ChatGPT to assist with automatic translation)",
-        "Several steps and flows (Inspection Requests, Updates on inspections of a part, Contracts)",
-        "Modeled and developed the entire database and back-end of the application",
-      ].map(function (text) {
-        return <li>{text}</li>;
-      }),
-      technologies: ["PHP", "MySQL", "JavaScript", "API", "Git"],
-      links: [
-        {
-          url: "https://www.dwgquality.com/en",
-          text: "Website",
-        },
-      ],    
-    },
-    {
-      cardTitle: "Product System - API",
-      cardSubtitle: "Project",
-      cardDetailedText: [
-        "RESTful API developed using the NestJS framework. It follows the principles of Clean Architecture and the MVC pattern. The API uses DTOs for data transfer",
-        "Project Architecture: Services, Infrastructure and Entities",
-      ].map(function (text) {
-        return <li>{text}</li>;
-      }),
-      technologies: ["NestJS", "TypeScript", "MySQL"],
-      links: [
-        {
-          url: "https://github.com/Santiago-Fae/nestjs-products-system/",
-          text: "Repository",
-        },
-      ],
-    },
-    {
-      cardTitle: "Lauri Romario Silva",
-      cardSubtitle: "Freelancer",
-      cardDetailedText: [
-        "Developed the front and back (I didn't do the layout)",
-        "Developed the management of all content in a proprietary and personalized CMS platform",
-        "Accept cookies is a module developed from scratch by me, implemented in all the company's websites.",
-      ].map(function (text) {
-        return <li>{text}</li>;
-      }),
-      technologies: ["PHP", "MySQL", "JavaScript", "Tailwind"],
-      links: [
-        {
-          url: "https://www.lauriromariosilva.com.br/",
-          text: "Website",
-        },
-      ],
-    },
-/*     {
-      cardTitle: "Finance Assistant Chatbot",
-      cardDetailedText: [
-        "Created a chatbot for Fin-tech companies for helping students regarding finances.",
-        "Tech stack comprises of Django, Rasa NLU and Postgresql.",
-      ].map(function (text) {
-        return <li>{text}</li>;
-      }),
-      technologies: ["Python", "Django", "Rasa"],
-      links: [
-        {
-          url: "https://github.com/Sitanshuk/HackPython",
-          text: "View Source Code",
-        },
-      ],
-    } */
-  ];
+  // Get formatted project data for the Projects component
+  const items = getProjectsData();
 
   const [limit, setLimit] = useState(3);
   const [loadButton, setLoadButton] = useState(true);
@@ -136,7 +34,7 @@ const Projects = () => {
   };
 
   const addButton = () => (
-    <Fab color="primary" color="blue" aria-label="add">
+    <Fab color="primary" aria-label="add">
       <AddIcon />
     </Fab>
   );
@@ -214,6 +112,19 @@ const Projects = () => {
                         </Button>
                       </div>
                     ))}
+                    {data.page && (
+                      <div>
+                        <br></br>
+                        <Button
+                          variant="contained"
+                          color="default"
+                          target="_blank"
+                          href={data.page}
+                        >
+                          Page
+                        </Button>
+                      </div>
+                    )}
                   </div>
                 </VerticalTimelineElement>
               ))}
