@@ -105,6 +105,7 @@ const Projects = () => {
                           key={j} // eslint-disable-line react/no-array-index-key
                           variant="contained"
                           color="default"
+                          className="link-button"
                           target="_blank"
                           href={link.url}
                         >
@@ -118,10 +119,10 @@ const Projects = () => {
                         <Button
                           variant="contained"
                           color="default"
-                          target="_blank"
+                          className="link-button"
                           href={data.page}
                         >
-                          Page
+                          Details
                         </Button>
                       </div>
                     )}

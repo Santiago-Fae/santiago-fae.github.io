@@ -9,25 +9,32 @@ import StarIcon from "@material-ui/icons/Star";
 const Education = () => {
   const items = [
     {
-      cardTitle: "Universidade de Caxias do Sul",
+      cardTitle: "Tamwood International College",
+      cardSubtitle: "Web Development Program",
+      cardDetailedText: [
+        "The program focuses on the development of interactive and responsive websites using modern front-end technologies.",
+        "Building dynamic websites with Content Management Systems (CMS)",
+        "Integrating and consuming external APIs",
+        "Writing clean, maintainable, and efficient code",
+        "Preparing to work professionally as a Front-end Developer, with the ability to adapt to various roles in the web development industry.",
+        "Includes 480 hours of real-world work experience, combining classroom instruction with hands-on industry practice.",
+      ].map(function (course) {
+        return <li>{course}</li>;
+      }),
+      date: "2025 - 2026",
+    },
+    {
+      cardTitle: "University de Caxias do Sul",
       cardSubtitle: "Bachelor of Software Engineering",
       cardDetailedText: [
-        "I've completed half of my degree, but I've stopped at the moment because of my exchange program. I intend to finish one day.",
         "During college I got my first contact with the programming language C and Java.",
         "I was also introduced to the programming site 'https://www.beecrowd.com.br', which is made to train exercises and programming logic. I am in the top positions in my college, with more than 500 registered students and more than 200 solved exercises.",
         "And I had subjects like: Algorithms and data structure, database, software architecture...",
       ].map(function (course) {
         return <li>{course}</li>;
       }),
-      date: "2020 - 2024",
-    },
-    {
-      cardTitle: "FreeCodeCamp",
-      cardSubtitle: "JavaScript Algorithms and Data Structures Certification",
-      cardDetailedText: "Course with more than 300 hours duration.",
-      cardDetailedText: "I learned and put into practice all the basics of JavaScript",
-      date: "2022 - 2022",
-    },
+      date: "2020 - 2027",
+    }
   ];
 
   return (

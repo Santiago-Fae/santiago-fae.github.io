@@ -60,7 +60,8 @@ export default function Hero() {
             <Button
               variant="outlined"
               target="_blank"
-              href="https://drive.google.com/file/d/10WmhuvEZbLGuSS4DnAzPmvNecTWxjLcv/view?usp=sharing"
+              href="/documents/resume.pdf"
+              className="resume-button"
               startIcon={<CloudDownloadIcon />}
               style={{
                 color: "rgb(116, 128, 138)",

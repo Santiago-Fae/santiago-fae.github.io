@@ -3,65 +3,12 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import Button from "@material-ui/core/Button";
 import WorkIcon from "@material-ui/icons/Work";
+import { getExperienceData } from "../data/experience";
 
 export default function Experience() {
-  const items = [
-    {
-      date: "April 2024 - Present",
-      cardTitle: "PlanMob",
-      cardSubtitle: "Full Stack Developer",
-      cardDetailedText: [
-        "I started at the company with the clock project. I was in charge of building the entire backend, using NestJs, a Node Js framework.",
-        "During development I applied JWT concepts for authentication, DTOs, microservices for scalability, queues using RabbitMQ, clean architecture and other standards for quality and easy code maintenance in the future. In addition, I applied unit tests and integration tests to guarantee functionality and prevent errors.",
-        "When necessary, I also worked on the front-end with Angular to build forms and dynamic screens.",
-      ].map(function (text) {
-        return <li>{text}</li>;
-      }),
-    },
-    {
-      date: "June 2021 - April 2024",
-      cardTitle: "Ilex",
-      cardSubtitle: "Full Stack Developer",
-      cardDetailedText: [
-        "I developed, refactored and improved the company's own CMS and applied it to more than 50 websites and ecommerces.",
-        "With the architectural standards adopted by the company of MVC, ORM (Active Record) and CRUD, I developed the back-end of websites, on the company's own CMS platform, adapting it to specifications and variations from client to client.",
-        "Integrated APIs from major tech giants like ChatGPT, Instagram and Twitter",
-      ].map(function (text) {
-        return <li>{text}</li>;
-      }),
-    },
-    {
-      date: "June 2022 – Present",
-      cardTitle: "Freelancer",
-      cardSubtitle: "Full Stack Developer",
-      cardDetailedText: [
-        "After a year of experience I started working independently on several projects.",
-        "From creating small applications to entire websites.",
-        "I took the opportunity to leave my comfort zone and develop projects in other languages ​​such as Java.",
-      ].map(function (text) {
-        return <li>{text}</li>;
-      }),
-    },
-/*     {
-      date: "September 2019 – October 2019",
-      cardTitle: "Techskills IT Consultants",
-      cardSubtitle: "Backend Developer",
-      cardDetailedText: [
-        "Developed applications using Spring Framework for Backend Restful API’s.",
-        "Wrote SQL/JPQL queries for Data persistence using Spring Data JPA.",
-      ].map(function (text) {
-        return <li>{text}</li>;
-      }),
-    },
-    {
-      date: "August 2018 – January 2019",
-      cardTitle: "TechSkills IT Consultants",
-      cardSubtitle: "Fullstack Developer Intern",
-      cardDetailedText:
-        "Developed a Meeting App website which handles all the data that happens in a meeting. In this project I developed several REST API's using Spring Boot and used the MVC architecture. These API's are being consumed in the frontend.",
-    }, */
-  ];
+  const items = getExperienceData();
 
   return (
     <section id="experience" class="about background-alt">
@@ -117,6 +64,23 @@ export default function Experience() {
                     >
                       {data.cardDetailedText}
                     </p>
+                    <div className="project-links">
+                    {data.links.map((link, j) => (
+                      <div>
+                        <br></br>
+                        <Button
+                          key={j} // eslint-disable-line react/no-array-index-key
+                          variant="contained"
+                          color="default"
+                          className="link-button"
+                          target="_blank"
+                          href={link.url}
+                        >
+                          {link.text}
+                        </Button>
+                      </div>
+                    ))}
+                  </div>
                   </VerticalTimelineElement>
                 );
               })}

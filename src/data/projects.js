@@ -1,20 +1,30 @@
 const projectsData = [
   {
-    id: "checkoutt",
-    cardTitle: "CheckouTT - API Twitter",
-    cardSubtitle: "Personal Project",
+    id: "found-pet",
+    cardTitle: "Found Pet",
+    cardSubtitle: "Mobile App",
     cardDetailedText: [
-      "A Twitter API that manipulates the data of the given user, returning the other users who most interacted with him.",
-      "Ranked in order of likes, retweets and replies on Twitter.",
-      "It was not developed through courses, it is a totally authentic project.",
+      "A mobile application developed in React Native.",
+      "The application allows users to register lost and found pets.",
+      "It includes a map to show the location of the pets.",
+      "The application is in the first version and is still under development.",
     ],
-    fullDescription: `This is a personal project I developed to analyze Twitter data.
-    The API manipulates the data of the given user, returning the other users who most interacted with them.
-    The ranking is done by order of likes, retweets and replies on Twitter.
-    It was an independently developed project, without following courses or tutorials.`,
-    technologies: ["PHP", "API", "JavaScript"],
+    fullDescription: `
+    <p><strong>Found Pet</strong> is a mobile application developed in <strong>React Native</strong>.</p>
+    <p>The application allows users to register lost and found pets, making it easier for people to find their furry friends.</p>
+    <p>It includes a map to show the location of the pets, helping users to locate them quickly.</p>
+    <p>The application is in its first version and is still under development, with many features planned for future releases.</p>
+    <p>I'm excited to share that I’ve completed the first version of my 𝐏𝐞𝐭 𝐅𝐨𝐮𝐧𝐝 project! 🐾</p>
+    <p>Here’s a video demonstration of it in action!</p>
+    `,    
+    technologies: ["React Native", "JavaScript", "Git"],
     links: [],
-    images: []
+    page: "./project/found-pet",
+    images: [
+      "/img/projects/found-pet/video1.mp4",
+      "/img/projects/found-pet/img1.jpg",
+      "/img/projects/found-pet/img2.jpg",
+    ]
   },
   {
     id: "majuseg",
@@ -132,6 +142,23 @@ const projectsData = [
         text: "Website",
       },
     ],
+    images: []
+  },
+  {
+    id: "checkoutt",
+    cardTitle: "CheckouTT - API Twitter",
+    cardSubtitle: "Personal Project",
+    cardDetailedText: [
+      "A Twitter API that manipulates the data of the given user, returning the other users who most interacted with him.",
+      "Ranked in order of likes, retweets and replies on Twitter.",
+      "It was not developed through courses, it is a totally authentic project.",
+    ],
+    fullDescription: `This is a personal project I developed to analyze Twitter data.
+    The API manipulates the data of the given user, returning the other users who most interacted with them.
+    The ranking is done by order of likes, retweets and replies on Twitter.
+    It was an independently developed project, without following courses or tutorials.`,
+    technologies: ["PHP", "API", "JavaScript"],
+    links: [],
     images: []
   }
 ];
