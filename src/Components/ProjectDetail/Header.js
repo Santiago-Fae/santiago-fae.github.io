@@ -11,7 +11,7 @@ class Header extends React.Component {
           <nav id="navbar" className="navbar nav-menu navbar-expand-sm">
             <ul>
               <li>
-                <a href="/#projects" aria-label='Me' className="nav-link scrollto d-flex justify-content-center">
+                <a href="/" aria-label='Me' className="nav-link scrollto d-flex justify-content-center">
                   <i class="bx bx-home"></i> 
                   <span>Home</span>
                 </a>

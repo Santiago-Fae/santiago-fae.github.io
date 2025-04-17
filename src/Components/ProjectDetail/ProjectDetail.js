@@ -151,7 +151,7 @@ const ProjectDetail = () => {
             )}
             
             <div className="mt-4 mb-5 text-center">
-              <a href="/#projects" a style={{ color: "#ffffff" }} className="btn btn-secondary">
+              <a href="/" a style={{ color: "#ffffff" }} className="btn btn-secondary">
                   <span>Back to all projects</span>
                 </a>
             </div>
