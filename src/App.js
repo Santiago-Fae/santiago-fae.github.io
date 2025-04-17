@@ -10,7 +10,7 @@ import Main from './Components/Main';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import useGoogleAnalytics from './Components/GoogleAnalytics';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import ProjectDetail from './Components/ProjectDetail/ProjectDetail';
 
 AOS.init();
