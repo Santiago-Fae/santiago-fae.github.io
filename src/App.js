@@ -29,7 +29,7 @@ function App() {
             </>
           )} />
           {/* <Route path="/project/:projectId" component={ProjectDetail} /> */}
-          <Route exact path="#/project/:projectId" render={() => (
+          <Route exact path="/project/:projectId" render={() => (
             <>
               <HeaderDetails />
               <ProjectDetail />
