@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.d618e3a3.css",
-    "main.js": "/static/js/main.1284967c.js",
-    "static/js/453.27fda5b5.chunk.js": "/static/js/453.27fda5b5.chunk.js",
-    "static/media/boxicons.svg": "/static/media/boxicons.c17adb11d64fadd1cd5a.svg",
-    "static/media/boxicons.eot": "/static/media/boxicons.092b78589f3f53e60030.eot",
-    "static/media/boxicons.woff": "/static/media/boxicons.0f4528cf3c75a4b361c0.woff",
-    "static/media/boxicons.ttf": "/static/media/boxicons.cbd149c55e2396cb52e7.ttf",
-    "static/media/me-space-apps.jpg": "/static/media/me-space-apps.5abf185a1d68292d45d3.jpg",
-    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.7d38a25801cfc2e01be2.woff",
-    "static/media/boxicons.woff2": "/static/media/boxicons.8d765747a5588f36ff61.woff2",
-    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.01c9cc54aa4917872f00.woff2",
-    "static/media/main-me.jpeg": "/static/media/main-me.949fb59c58ec2c0a757a.jpeg",
-    "index.html": "/index.html",
-    "main.d618e3a3.css.map": "/static/css/main.d618e3a3.css.map",
-    "main.1284967c.js.map": "/static/js/main.1284967c.js.map",
-    "453.27fda5b5.chunk.js.map": "/static/js/453.27fda5b5.chunk.js.map"
+    "main.css": "/teste/static/css/main.a7692245.css",
+    "main.js": "/teste/static/js/main.8f953742.js",
+    "static/js/453.27fda5b5.chunk.js": "/teste/static/js/453.27fda5b5.chunk.js",
+    "static/media/boxicons.svg": "/teste/static/media/boxicons.c17adb11d64fadd1cd5a.svg",
+    "static/media/boxicons.eot": "/teste/static/media/boxicons.092b78589f3f53e60030.eot",
+    "static/media/boxicons.woff": "/teste/static/media/boxicons.0f4528cf3c75a4b361c0.woff",
+    "static/media/boxicons.ttf": "/teste/static/media/boxicons.cbd149c55e2396cb52e7.ttf",
+    "static/media/me-space-apps.jpg": "/teste/static/media/me-space-apps.5abf185a1d68292d45d3.jpg",
+    "static/media/bootstrap-icons.woff?": "/teste/static/media/bootstrap-icons.7d38a25801cfc2e01be2.woff",
+    "static/media/boxicons.woff2": "/teste/static/media/boxicons.8d765747a5588f36ff61.woff2",
+    "static/media/bootstrap-icons.woff2?": "/teste/static/media/bootstrap-icons.01c9cc54aa4917872f00.woff2",
+    "static/media/main-me.jpeg": "/teste/static/media/main-me.949fb59c58ec2c0a757a.jpeg",
+    "index.html": "/teste/index.html",
+    "main.a7692245.css.map": "/teste/static/css/main.a7692245.css.map",
+    "main.8f953742.js.map": "/teste/static/js/main.8f953742.js.map",
+    "453.27fda5b5.chunk.js.map": "/teste/static/js/453.27fda5b5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d618e3a3.css",
-    "static/js/main.1284967c.js"
+    "static/css/main.a7692245.css",
+    "static/js/main.8f953742.js"
   ]
 }
