@@ -19,7 +19,7 @@ const projectsData = [
     `,    
     technologies: ["React Native", "JavaScript", "Git"],
     links: [],
-    page: "./project/found-pet",
+    page: "/#project/found-pet",
     images: [
       "/img/projects/found-pet/video1.mp4",
       "/img/projects/found-pet/img1.jpg",
@@ -86,7 +86,7 @@ const projectsData = [
         text: "Website",
       }
     ],
-    page: "./project/dwg",
+    page: "/#project/dwg",
     images: [
       "/img/projects/dwg/system_dwg.png",
       "/img/projects/dwg/pdf.png",
@@ -118,6 +118,7 @@ const projectsData = [
         text: "Repository",
       },
     ],
+    page: "/#project/product-system",
     images: []
   },
   {

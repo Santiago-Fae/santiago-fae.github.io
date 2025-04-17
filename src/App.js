@@ -10,7 +10,7 @@ import Main from './Components/Main';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import useGoogleAnalytics from './Components/GoogleAnalytics';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import ProjectDetail from './Components/ProjectDetail/ProjectDetail';
 
 AOS.init();
@@ -18,7 +18,7 @@ AOS.init();
 function App() {
   useGoogleAnalytics();
   return (
-    <Router>
+    <HashRouter>
       <div className="App" style={{background: "rgba(46, 45, 43, 1)"}}>
         <Switch>
           <Route exact path="/" render={() => (
@@ -29,7 +29,7 @@ function App() {
             </>
           )} />
           {/* <Route path="/project/:projectId" component={ProjectDetail} /> */}
-          <Route exact path="/project/:projectId" render={() => (
+          <Route exact path="#/project/:projectId" render={() => (
             <>
               <HeaderDetails />
               <ProjectDetail />
@@ -37,7 +37,7 @@ function App() {
           )} />
         </Switch>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
