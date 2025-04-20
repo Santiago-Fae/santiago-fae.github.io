@@ -6,12 +6,15 @@ class Header extends React.Component {
 
   constructor() {
     super();
-    this.scrollto.bind(this);
-    this.select.bind(this);
+    this.scrollto = this.scrollto.bind(this);
+    this.select = this.select.bind(this);
+    this.verifyQueryStringToScroll = this.verifyQueryStringToScroll.bind(this);
   }
 
   componentDidMount() {
     window.addEventListener('load', this.navbarlinksActive);
+    window.addEventListener('load', this.verifyQueryStringToScroll);
+
     this.onscroll(document, this.navbarlinksActive);
 
     this.on('click', '.mobile-nav-toggle', function(e) {
@@ -64,7 +67,7 @@ class Header extends React.Component {
     el.addEventListener('scroll', listener)
   }
 
-  scrollto(el) {
+  scrollto = (el) => {
     let elementPos = document.querySelector(el).offsetTop
     window.scrollTo({
       top: elementPos,
@@ -72,6 +75,14 @@ class Header extends React.Component {
     })
   }
 
+  verifyQueryStringToScroll = () => {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const section = urlParams.get('s');
+    if (section) {
+      this.scrollto(`#${section}`);
+    }
+  }
 
   navbarlinksActive = () => {
     let navbarlinks = document.querySelectorAll('#navbar .scrollto')

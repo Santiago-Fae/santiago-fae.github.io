@@ -16,6 +16,12 @@ class Header extends React.Component {
                   <span>Home</span>
                 </a>
               </li>
+              <li>
+                <a href="/?s=projects" aria-label='My projects' class="nav-link scrollto d-flex justify-content-center">
+                  <i class="bx bx-code"></i>
+                  <span>Projects</span>
+                </a>
+              </li>
             </ul>
           </nav>
         </header>

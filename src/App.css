@@ -555,6 +555,10 @@ section {
   color: rgba(255, 255, 255, 0.8);
   font-size: 1.2em;
 }
+#skills .skills-list-container {
+  padding: 0;
+  list-style: none;
+}
 #skills .skills-list-container > li {
   margin-bottom: 20px;
 }
