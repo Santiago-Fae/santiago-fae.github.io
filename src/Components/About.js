@@ -48,7 +48,7 @@ export default function About() {
               I’m a Full Stack Developer passionate about technology, always eager to learn and explore new tools and methodologies. My main stack includes Node.js, PHP, MongoDB, MySQL, Angular, and Git. I also have experience with a range of other technologies and am always open to diving into new ones. <br></br>
             </p>
             <p style={{ color: "#d8d8d8" }}>
-            With over 4 years of hands-on experience, I’ve worked on more than 100 content management systems, e-commerce platforms, and web applications. I’ve even developed the entire backend of a SaaS platform on my own. I’m versatile, capable of managing projects independently, but I also thrive in collaborative environments — often stepping up to lead initiatives when needed.
+            With over {new Date().getFullYear() - 2021}+ years of hands-on experience, I’ve worked on more than 100 content management systems, e-commerce platforms, and web applications. I’ve even developed the entire backend of a SaaS platform on my own. I’m versatile, capable of managing projects independently, but I also thrive in collaborative environments — often stepping up to lead initiatives when needed.
             </p>
             <p style={{ color: "#d8d8d8" }}>
             My journey began with curiosity — I taught myself how to code and never stopped learning since. I’ve participated in hackathons like NASA Space Apps, where I helped build a full application in just two days. I enjoy challenges and love stepping out of my comfort zone because that’s when real growth happens.

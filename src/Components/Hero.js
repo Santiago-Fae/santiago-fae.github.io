@@ -46,7 +46,7 @@ export default function Hero() {
               <a href="mailto:santiagopoffo@hotmail.com" target="_blank" rel="noopener noreferrer" aria-label="My mail account">
                 <i class="bx bx-envelope"></i>
               </a>
-              <a href="https://www.beecrowd.com.br/judge/pt/profile/573539" target="_blank" rel="noopener noreferrer" aria-label="My beecrowd profile">
+              <a href="https://judge.beecrowd.com/pt/profile/573539" target="_blank" rel="noopener noreferrer" aria-label="My beecrowd profile">
                 <i class="bx bx-code-alt"></i>
               </a>
               <a href="https://www.instagram.com/santi_fae/" target="_blank" rel="noopener noreferrer" aria-label="My instagram account">

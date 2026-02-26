@@ -1,6 +1,6 @@
 const experienceData = [
   {
-    date: "April 2024 - Present",
+    date: "April 2024 - January 2026",
     cardTitle: "PlanMob",
     cardSubtitle: "Full Stack Developer",
     cardDetailedText: [
